@@ -411,6 +411,7 @@ padding: 3rem 0;
     justify-content: center;
     padding: 2rem 0;
     background-color: var(--white);
+    outline:4px solid rgba(0, 0, 0, 0)  ;
 }
 .item-img img{
     width: 40%;
