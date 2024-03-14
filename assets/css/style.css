@@ -367,6 +367,7 @@ height: 100%;
 
 /* -------------------Prodcuts----------------------- */
 .sellitems{
+    width: 100%;
     background-color: var(--sep);
 padding: 3rem 0;
 }
