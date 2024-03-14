@@ -314,45 +314,59 @@ gap: 10px;
 grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
+.gallerygrid>div>img{
+    background-size: cover;
+}
 .gallery1{
     grid-area: 3/4/5/7;
     background-color: #D2B45D;
+    overflow: hidden;
+    
 }
 .gallery2{
     grid-area: 5/2/8/7;
     background-color: #ffc209;
+    overflow: hidden;
 }
 .gallery3{
     grid-area: 8/4/12/7;
     background-color: #7b00ff;
+    overflow: hidden;
 }
 .gallery4{
     grid-area: 3/7/6/12;
     background-color: #ff0000;
+    overflow: hidden;
 }
 .gallery5{
     grid-area: 6/7/11/12;
     background-color: #ffffff;
+    overflow: hidden;
 }
 .gallery6{
     grid-area: 2/12/7/17;
     background-color: #27067f;
+    overflow: hidden;
 }
 .gallery7{
     grid-area:7/12/11/19;
     background-color: #D2B45D;
+    overflow: hidden;
 }
 .gallery8{
     grid-area: 4/17/7/22;
     background-color: #43ab07;
+    overflow: hidden;
 }
 .gallery9{
     grid-area: 7/19/10/24;
     background-color: #D2B45D;
+    overflow: hidden;
 }
 .gallery10{
     grid-area: 10/19/12/22;
     background-color: #a80780;
+    overflow: hidden;
 }
 /* -------------CLient Review---------------------- */
 .review{
