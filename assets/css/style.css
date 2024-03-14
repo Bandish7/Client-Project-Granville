@@ -9,6 +9,7 @@
     --sep:#0e0d0d;
     --font: 'Poppins', Arial,Helvetica;
 }
+
 body{
     font-family: var(--font);
     background-color: var(--black);
