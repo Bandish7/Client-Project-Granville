@@ -14,6 +14,8 @@ body{
     background-color: var(--black);
 }
 header{
+    max-width: 1200px;
+    margin: auto;
     display: flex;
     align-items:center;
     justify-content:center;
@@ -22,12 +24,12 @@ header{
     position: sticky;
     top: 0px;
 
+
 }
 nav{
-    /* max-width: 1200px; */
+    
     width: 100%;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between; 
     padding: 10px 50px;
@@ -302,6 +304,7 @@ height: 100%;
    max-width: 1200px;
    margin: auto;
    color: wheat;
+   padding: 3rem 0;
 
 }
 .review-item-box{
@@ -360,4 +363,78 @@ height: 100%;
 }
 .client-msg{
     padding: 15px 20px;
+}
+
+/* -------------------Prodcuts----------------------- */
+.sellitems{
+    background-color: var(--sep);
+padding: 3rem 0;
+}
+.product{
+    color: white;
+    margin: auto;
+    max-width: 1200px;
+    width: 100%;
+
+}
+.product h2{
+    text-align: center;
+    font-size: 3rem;
+    padding: 2rem 0;
+}
+.product p{
+    text-align: center;
+    line-height: 2;
+    width: 80%;
+    margin: auto;
+}
+.item-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5rem 0;
+
+}
+.item{
+
+    width: 22%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.item .item-img{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    background-color: var(--white);
+}
+.item-img img{
+    width: 40%;
+}
+.item-img:hover{
+    cursor: pointer;
+    outline: 4px solid var(--golden);
+    transition: all 0.5s;
+}
+.item-img:hover img.productphoto{
+    transform: scale(1.1);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.item-text{
+    padding: 1.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.item-text h4,.item-text h4 a{
+    padding: 10px 0;
+    font-size: 20px;
+    color: var(--white);
+    text-decoration: none;
 }
