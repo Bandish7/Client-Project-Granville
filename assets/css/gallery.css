@@ -22,3 +22,33 @@
 .gal2{
     grid-area: 2/4/4/5;
 }
+
+.gallery5{
+    grid-area: 6/7/11/14;
+    /* background-color: #ffffff; */
+    overflow: hidden;
+}
+.gallery5 img{
+    object-fit: contain;
+    width: 100%; 
+    height: auto; 
+    display: block;
+}
+.gallery5 video {
+    position: absolute;
+    /* width: 100%;
+    height: 100%; */
+    object-fit: contain;
+    width:auto; 
+    height: 100%; 
+    /* display: block; */
+    /* object-fit: cover; */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.gallery5:hover img {
+    opacity: 0;
+}
+.gallery5:hover video {
+    opacity: 1;
+}
