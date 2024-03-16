@@ -67,6 +67,11 @@ nav>ul>li>a:hover{
 background-color: var(--golden);
 border-radius: 8px;
 }
+.anchor{
+    display:block;
+    padding-top:100px;
+    margin-top:-100px;
+ }
 .bgsep{
     width: 100%;
     background-color: var(--sep);
