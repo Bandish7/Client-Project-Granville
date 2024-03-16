@@ -1,11 +1,11 @@
 main{
-    max-width: 1250px;
+    max-width: 1200px;
     width: 100%;
     margin: auto;
 }
 .galdiv{
-    padding: 55px 75px;
-    max-width: 1250px;
+    padding: 55px 70px;
+    max-width: 1200px;
     width: 100%;
     height:900px ;
     display: grid;
@@ -14,6 +14,7 @@ main{
     grid-template-columns:  repeat(10,1fr);
     overflow: hidden;
 }
+
 .galdiv :hover{
     /* transform: scaleX(1.4) scaleY(1.4); */
     transform: scale(1.2);
@@ -41,17 +42,17 @@ main{
     height: 100%; 
     display: block;
 } */
-.galimg1{
-    grid-area: 1/1/3/3;
-    background-color:var(--black);
-    overflow: hidden;
-}
 .galdiv img:hover{
     background-color: var(--black);
     object-fit: contain;
     width: 100%; 
     height: 100%; 
     display: block;
+}
+.galimg1{
+    grid-area: 1/1/3/3;
+    background-color:var(--black);
+    overflow: hidden;
 }
 .galimg2{
     grid-area: 1/3/3/6;
@@ -147,4 +148,73 @@ main{
     grid-area: 9/8/11/11;
     background-color: #51c162;
     overflow: hidden;
+}
+
+/* for 2*2 images */
+
+.galimg1:hover,
+.galimg3:hover,
+.galimg7:hover,
+.galimg8:hover,
+.galimg9:hover,
+.galimg11:hover,
+.galimg14:hover,
+.galimg16:hover,
+.galimg17:hover,
+.galimg18:hover{
+    transform: scaleX(1.4) scaleY(1.4);
+}
+
+/* for 3*2 images */
+
+.galimg2:hover,
+.galimg4:hover,
+.galimg5:hover,
+.galimg6:hover,
+.galimg10:hover,
+.galimg12:hover,
+.galimg13:hover,
+.galimg15:hover,
+.galimg19:hover,
+.galimg20:hover{
+    transform: scaleX(1.4) scaleY(1.5);
+}
+/* MEDIA QUERY */
+@media screen and (min-width: 1264px) {
+    /* main{
+        max-width: 1050px;
+    } */
+    .galdiv {
+        padding: 55px 50px; /* Reduced padding */
+        max-width: 1110px;
+    }
+    /* for 2*2 images */
+
+.galimg1:hover,
+.galimg3:hover,
+.galimg7:hover,
+.galimg8:hover,
+.galimg9:hover,
+.galimg11:hover,
+.galimg14:hover,
+.galimg16:hover,
+.galimg17:hover,
+.galimg18:hover{
+    transform: scaleX(1.2) scaleY(1.2);
+}
+
+/* for 3*2 images */
+
+.galimg2:hover,
+.galimg4:hover,
+.galimg5:hover,
+.galimg6:hover,
+.galimg10:hover,
+.galimg12:hover,
+.galimg13:hover,
+.galimg15:hover,
+.galimg19:hover,
+.galimg20:hover{
+    transform: scaleX(1.2) scaleY(1.3);
+}
 }
