@@ -270,7 +270,7 @@ height: 100%;
 }
 .service-text{
     text-align: center;
-    line-height:1.5;
+    line-height:1.6;
     padding: 2rem 15px;
 }
 
@@ -730,4 +730,130 @@ line-height: 2;
     font-size: 20px;
     background-color: var(--sep);
     padding: 1.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.footerlast p a{
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 300;
+    padding: 0 10px;
+}
+.footerlast p a:hover{
+    color: var(--golden);
+}
+
+/* ---------------Terms and Condition PAge-------------------- */
+.tnctopbar{
+    width: 100%;
+    background-color: var(--sep);
+    padding: 20px 0;
+}
+
+.tnctopbar h2{
+    color: white;
+    font-size: 2.5rem;
+    padding: 20px 0;
+    font-weight: 550;
+    text-align: center;
+}
+.tnctopbar p{
+    text-align: center;
+    color: var(--white);
+}
+.tnctopbar p a{
+    color: var(--white);
+    padding: 5px;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 16px;
+}
+.tnctopbar p a:hover{
+text-decoration: underline;
+color: var(--golden);
+}
+
+.tnccontents{
+    color: var(--white);
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+.tncheading{
+    font-size: 28px;
+    font-weight: 500;
+    padding: 3rem 0 1.5rem;
+}
+.tnctext{
+    line-height: 1.6;
+    text-align: justify;
+    list-style-type: none;
+    list-style-position:
+    outside ;
+
+}
+.tnctext li{
+line-height: 1.6;
+}
+.tnctext a{
+    color: var(--golden);
+}
+
+/* --------------------Privacy Policies--------------------- */
+.pptopbar{
+    width: 100%;
+    background-color: var(--sep);
+    padding: 20px 0;
+}
+
+.pptopbar h2{
+    color: white;
+    font-size: 2.5rem;
+    padding: 20px 0;
+    font-weight: 550;
+    text-align: center;
+}
+.pptopbar p{
+    text-align: center;
+    color: var(--white);
+}
+.pptopbar p a{
+    color: var(--white);
+    padding: 5px;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 16px;
+}
+.pptopbar p a:hover{
+text-decoration: underline;
+color: var(--golden);
+}
+
+.ppcontents{
+    color: var(--white);
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    padding: 20px 0;
+}
+.ppheading{
+    font-size: 28px;
+    font-weight: 500;
+    padding: 3rem 0 1.5rem;
+}
+.pptext{
+    line-height: 1.6;
+    text-align: justify;
+    list-style-type: circle; 
+    list-style-position:
+    outside ;
+
+}
+
+.pptext li{
+line-height: 1.6;
+}
+.pptext a{
+    color: var(--golden);
 }
