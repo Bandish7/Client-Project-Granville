@@ -180,14 +180,12 @@ main{
     transform: scaleX(1.4) scaleY(1.5);
 }
 /* MEDIA QUERY */
-@media screen and (min-width: 1264px) {
-    /* main{
-        max-width: 1050px;
-    } */
+@media screen and (min-width: 1000px) and (max-width: 1300px) {
     .galdiv {
-        padding: 55px 50px; /* Reduced padding */
+        padding: 55px 50px; 
         max-width: 1110px;
     }
+    
     /* for 2*2 images */
 
 .galimg1:hover,
