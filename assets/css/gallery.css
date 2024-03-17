@@ -1,18 +1,30 @@
+:root{
+    --golden:#D2B45D;
+    --black:rgb(0,0,0);
+    --red:rgb(254, 0, 44);
+    --blue:rgb(0, 96, 255);
+    --service-color:rgba(244, 191, 0, 0.4);
+    --white:rgb(255,255,255);
+    --sep:#0e0d0d;
+    --font: 'Poppins', Arial,Helvetica;
+}
 main{
     max-width: 1200px;
     width: 100%;
     margin: auto;
 }
 .galdiv{
-    padding: 55px 70px;
+    /* padding: 55px 70px; */
     max-width: 1200px;
     width: 100%;
-    height:900px ;
+    margin: auto;
+    height:1000px ;
     display: grid;
     gap: 10px;
     grid-template-rows: repeat(10,1fr);
     grid-template-columns:  repeat(10,1fr);
     overflow: hidden;
+    background-color: var(--sep);
 }
 
 .galdiv :hover{
