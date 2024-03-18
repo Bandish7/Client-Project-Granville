@@ -1,0 +1,10 @@
+:root{
+    --golden:#D2B45D;
+    --black:rgb(0,0,0);
+    --red:rgb(254, 0, 44);
+    --blue:rgb(0, 96, 255);
+    --service-color:rgba(244, 191, 0, 0.4);
+    --white:rgb(255,255,255);
+    --sep:#0e0d0d;
+    --font: 'Poppins', Arial,Helvetica;
+}
