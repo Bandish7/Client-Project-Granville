@@ -587,6 +587,15 @@ padding: 2rem 0;
     padding: 2rem 0;
     color: var(--white);
     font-weight: 550;
+    
+}
+#subHeadingOtherPage{
+    text-align: center;
+    font-size: 3rem;
+    padding: 1rem 0;
+    color: var(--white);
+    font-weight: 550;
+    background-color: var(--sep);
 }
 .product p{
     text-align: center;
