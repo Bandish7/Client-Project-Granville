@@ -37,7 +37,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 20px 15px;
 }
 
 nav .logo {
@@ -76,7 +76,9 @@ nav>ul>li>a:hover {
     background-color: var(--golden);
     border-radius: 8px;
 }
-
+.mobilemenu{
+    display: none;
+}
 .anchor {
     display: block;
     padding-top: 100px;
@@ -146,70 +148,35 @@ nav>ul>li>a:hover {
 }
 
 /* ----------------Mobilemenu--------------------- */
-.mobilemenu a {
-    text-decoration: none;
-    font-size: 3rem;
-    color: white;
-    /* display: none; */
-}
-
 .mobile {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 1);
     padding: 2rem 3rem;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
-    max-width: 300px;
-    width: 100%;
+    left: 0;
+    display: none;
 }
-
 .mobile ul {
     list-style: none;
     text-align: center;
-
 }
 
 .mobile ul li {
     line-height: 3;
+    text-align: center;
 }
 
 .mobile ul a {
     text-decoration: none;
     color: white;
 }
-
-@media screen and(max-width:900px) {
-    header nav>ul {
-        visibility: hidden;
-    }
-
-    .mobile {
-        background-color: rgba(0, 0, 0, 0.4);
-        padding: 2rem 3rem;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        max-width: 300px;
-        width: 100%;
-    }
-
-    .mobile ul {
-        list-style: none;
-        text-align: center;
-
-    }
-
-    .mobile ul li {
-        line-height: 3;
-    }
-
-    .mobile ul a {
-        text-decoration: none;
-        color: white;
-    }
-
+.mobilemenu a {
+    text-decoration: none;
+   font-size: 3rem;
+   color: white; 
+   display: none;
 }
 
 /* --------------------------Hero Grid Image----------------- */
@@ -264,7 +231,7 @@ nav>ul>li>a:hover {
 
 .serivce-container {
     width: 100%;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: auto;
     display: flex;
     align-items: center;
@@ -344,7 +311,9 @@ nav>ul>li>a:hover {
     width: 100%;
     margin: auto;
 }
-
+.mobGalleryGrid{
+    display: none;
+}
 .gallerygrid {
     max-width: 1200px;
     width: 100%;
@@ -1020,21 +989,55 @@ footer {
 }
 
 /* ------------------Responsive ------------------------ */
-@media screen and (min-width: 300px) and (max-width: 800px){
+@media screen and (min-width: 200px) and (max-width: 800px){
   
     nav ul{
         display: none;
     }
+    .hero-text h1 {
+        font-size: 55px;
+        font-weight: 600;
+        line-height: 1.5;
+        color: white;
+        padding-left: 15px;
+    }
+    
+    .hero-text h1 span {
+        color: var(--golden);
+    }
+    
+    .hero-text p {
+        margin: 3rem 0;
+        font-size: 25px;
+        font-weight: 500;
+        font-style: italic;
+        text-align: center;
+        color: var(--white);
+    }
+    
+    .hero-text a {
+    
+        font-size: 24px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-style: normal;
+        text-align: left;
+        padding: 12px 20px;
+        background-color: var(--golden);
+        color: white;
+    }
     .hero-text {
-
-        display: none;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
     }
     .hero-image{
         display: none;
     }
     .hero{
         display: block;
-        background: url(../images/sonam.webp);
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0 ,0, 1)), url(../images/sonam.webp);
         background-size: cover;
         background-position: top;
    
@@ -1054,7 +1057,7 @@ footer {
         color: var(--golden);
     }
 }
-@media screen and (min-width:300px) {
+@media screen and (min-width:200px) {
 
     .mobileherotext{
         
