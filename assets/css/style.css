@@ -76,9 +76,7 @@ nav>ul>li>a:hover {
     background-color: var(--golden);
     border-radius: 8px;
 }
-.mobilemenu{
-    display: none;
-}
+
 .anchor {
     display: block;
     padding-top: 100px;
@@ -158,9 +156,31 @@ nav>ul>li>a:hover {
     left: 0;
     display: none;
 }
+
+.posContainer{
+position: fixed;
+top: 10px;
+
+height: 100%;
+
+}
+.mobile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 2rem;
+    width: 800px;
+    position: absolute;
+    top: -10px;
+    height: 100%;
+    background-color: var(--sep);
+}
+
 .mobile ul {
     list-style: none;
     text-align: center;
+
 }
 
 .mobile ul li {
@@ -171,6 +191,28 @@ nav>ul>li>a:hover {
 .mobile ul a {
     text-decoration: none;
     color: white;
+    font-size: 25px;
+}
+.mobile h4{
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--white);
+    padding-top: 2rem;
+}
+.mobsocial{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 15px;
+
+}
+.mobsocial a{
+    padding-right: 10px;
+    font-size: 2rem;
+    color: var(--white);
+}
+.mobsocial a:hover{
+    color: var(--golden);
 }
 .mobilemenu a {
     text-decoration: none;
@@ -231,7 +273,7 @@ nav>ul>li>a:hover {
 
 .serivce-container {
     width: 100%;
-    /* max-width: 1200px; */
+    max-width: 1200px;
     margin: auto;
     display: flex;
     align-items: center;
@@ -311,9 +353,7 @@ nav>ul>li>a:hover {
     width: 100%;
     margin: auto;
 }
-.mobGalleryGrid{
-    display: none;
-}
+
 .gallerygrid {
     max-width: 1200px;
     width: 100%;
@@ -994,50 +1034,16 @@ footer {
     nav ul{
         display: none;
     }
-    .hero-text h1 {
-        font-size: 55px;
-        font-weight: 600;
-        line-height: 1.5;
-        color: white;
-        padding-left: 15px;
-    }
-    
-    .hero-text h1 span {
-        color: var(--golden);
-    }
-    
-    .hero-text p {
-        margin: 3rem 0;
-        font-size: 25px;
-        font-weight: 500;
-        font-style: italic;
-        text-align: center;
-        color: var(--white);
-    }
-    
-    .hero-text a {
-    
-        font-size: 24px;
-        border-radius: 8px;
-        text-decoration: none;
-        font-style: normal;
-        text-align: left;
-        padding: 12px 20px;
-        background-color: var(--golden);
-        color: white;
-    }
     .hero-text {
-        flex-direction: column;
-        display: flex;
-        align-items: center;
-        justify-content:space-between;
+
+        display: none;
     }
     .hero-image{
         display: none;
     }
     .hero{
         display: block;
-        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0 ,0, 1)), url(../images/sonam.webp);
+        background: url(../images/sonam.webp);
         background-size: cover;
         background-position: top;
    
@@ -1057,7 +1063,7 @@ footer {
         color: var(--golden);
     }
 }
-@media screen and (min-width:200px) {
+@media screen and (min-width:300px) {
 
     .mobileherotext{
         
