@@ -231,7 +231,7 @@ nav>ul>li>a:hover {
 
 .serivce-container {
     width: 100%;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: auto;
     display: flex;
     align-items: center;
