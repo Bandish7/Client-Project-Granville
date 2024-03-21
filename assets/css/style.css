@@ -1,7 +1,4 @@
 @import url(./reset.css);
-*{
-    border: 1px solid red;
-}
 
 :root {
     --golden: #D2B45D;
@@ -22,8 +19,14 @@ body {
 header {
     width: 100%;
     margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--black);
-    
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+
 
 }
 
@@ -103,9 +106,7 @@ nav>ul>li>a:hover {
     margin: auto;
 
 }
-.mobileherotext{
-    display: none;
-}
+
 .hero-text {
     flex-basis: 50%;
     display: flex;
@@ -270,7 +271,6 @@ nav>ul>li>a:hover {
     justify-content: space-between;
     gap: 5%;
     flex-direction: row;
-    padding-top: 2rem;
 
 }
 
@@ -343,7 +343,6 @@ nav>ul>li>a:hover {
     max-width: 1200px;
     width: 100%;
     margin: auto;
-    padding: 4rem 0;
 }
 .mobGalleryGrid{
     display: none;
@@ -586,7 +585,8 @@ nav>ul>li>a:hover {
     flex-direction: column;
     max-width: 1200px;
     margin: auto;
-    padding: 4rem 0;
+    color: wheat;
+    padding: 3rem 0;
     background-color: var(--black);
 
 }
@@ -664,7 +664,7 @@ nav>ul>li>a:hover {
 .sellitems {
     width: 100%;
     background-color: var(--sep);
-  
+    padding: 2rem 0;
 }
 
 .product {
@@ -672,7 +672,6 @@ nav>ul>li>a:hover {
     margin: auto;
     max-width: 1200px;
     width: 100%;
-    padding: 4rem 0;
 
 }
 
@@ -1102,105 +1101,4 @@ footer {
         font-weight: 700;
         line-height: 1.2;
     }
-} */
-
-/* @media screen and (max-width: 1200px) {
-    .hero {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .hero-text {
-        flex-basis: 100%;
-    }
-
-    .hero-image {
-        width: 100%;
-        margin-top: 2rem;
-    }
-
-    .grid-container {
-        height: auto;
-    }
-
-    .serivce-container {
-        flex-direction: column;
-        gap: 2rem;
-        text-align: center;
-    }
-
-    .serivce-container > div {
-        width: 100%;
-    }
-
-    .gallerygrid > div {
-        width: 100%;
-    }
-
-    .product {
-        padding: 2rem 0;
-    }
-
-    .item-container {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .item {
-        width: 45%;
-        margin: 1rem 0;
-    }
-
-    .footerone {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .socialicons {
-        width: 100%;
-    }
 }
-
-@media screen and (max-width: 900px) {
-    .mobilemenu button {
-        display: block;
-    }
-
-    header nav > ul {
-        display: none;
-    }
-
-    .hero-text {
-        text-align: center;
-    }
-
-    .mobileherotext {
-        display: block;
-    }
-
-    .hero-image {
-        display: none;
-    }
-
-    .hero {
-        height: auto;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .service-container > div {
-        width: 100%;
-    }
-
-    .grid-container {
-        grid-template-columns: 1fr;
-    }
-
-    .item {
-        width: 100%;
-    }
-
-    .openinghours {
-        width: 100%;
-    }
-} */
