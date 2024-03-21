@@ -182,7 +182,7 @@ height: 100%;
     height: 100%;
     background-color: var(--sep);
 }
-=======
+
 .mobilemenu a {
     text-decoration: none;
     font-size: 3rem;
@@ -200,7 +200,7 @@ height: 100%;
     max-width: 300px;
     width: 100%;
 }
->>>>>>> parent of db52ba5 (a lot of changes with media query for responsive website)
+
 
 .mobile ul {
     list-style: none;
@@ -218,13 +218,12 @@ height: 100%;
     color: white;
     font-size: 25px;
 }
-<<<<<<< HEAD
 .mobile h4{
     font-size: 25px;
     font-weight: 500;
     color: var(--white);
     padding-top: 2rem;
-=======
+}
 
 @media screen and(max-width:900px) {
     header nav>ul {
@@ -257,7 +256,6 @@ height: 100%;
         color: white;
     }
 
->>>>>>> parent of db52ba5 (a lot of changes with media query for responsive website)
 }
 .mobsocial{
     display: flex;
