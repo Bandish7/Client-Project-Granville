@@ -37,8 +37,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 0;
-    z-index: 999;
+    padding: 20px 15px;
 }
 
 nav .logo {
@@ -147,51 +146,8 @@ nav>ul>li>a:hover {
 }
 
 /* ----------------Mobilemenu--------------------- */
-.mobilemenu button {
-    text-decoration: none;
-    font-size: 3rem;
-    color: white;
-    border: none;
-    background-color: var(--black);
-    /* display: none; */
-}
-.mobile .closeButton button{
-    text-decoration: none;
-    font-size: 3rem;
-    color: white;
-    border: none;
-    background-color: var(--sep); 
-}
-
-.posContainer{
-position: fixed;
-top: 10px;
-
-height: 100%;
-
-}
 .mobile {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
-    padding: 2rem;
-    width: 800px;
-    position: absolute;
-    top: -10px;
-    height: 100%;
-    background-color: var(--sep);
-}
-
-.mobilemenu a {
-    text-decoration: none;
-    font-size: 3rem;
-    color: white;
-    /* display: none; */
-}
-
-.mobile {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 1);
     padding: 2rem 3rem;
     position: absolute;
     top: 0;
@@ -200,8 +156,6 @@ height: 100%;
     max-width: 300px;
     width: 100%;
 }
-
-
 .mobile ul {
     list-style: none;
     text-align: center;
@@ -209,68 +163,13 @@ height: 100%;
 }
 
 .mobile ul li {
-    line-height: 2;
-    
+    line-height: 3;
+    text-align: center;
 }
 
 .mobile ul a {
     text-decoration: none;
     color: white;
-    font-size: 25px;
-}
-.mobile h4{
-    font-size: 25px;
-    font-weight: 500;
-    color: var(--white);
-    padding-top: 2rem;
-}
-
-@media screen and(max-width:900px) {
-    header nav>ul {
-        visibility: hidden;
-    }
-
-    .mobile {
-        background-color: rgba(0, 0, 0, 0.4);
-        padding: 2rem 3rem;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        max-width: 300px;
-        width: 100%;
-    }
-
-    .mobile ul {
-        list-style: none;
-        text-align: center;
-
-    }
-
-    .mobile ul li {
-        line-height: 3;
-    }
-
-    .mobile ul a {
-        text-decoration: none;
-        color: white;
-    }
-
-}
-.mobsocial{
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding-top: 15px;
-
-}
-.mobsocial a{
-    padding-right: 10px;
-    font-size: 2rem;
-    color: var(--white);
-}
-.mobsocial a:hover{
-    color: var(--golden);
 }
 .mobilemenu a {
     text-decoration: none;
@@ -278,6 +177,8 @@ height: 100%;
    color: white; 
    display: none;
 }
+
+} */
 
 /* --------------------------Hero Grid Image----------------- */
 .hero-image {
@@ -1087,7 +988,7 @@ footer {
 }
 
 /* ------------------Responsive ------------------------ */
-/* @media screen and (min-width: 300px) and (max-width: 800px){
+@media screen and (min-width: 200px) and (max-width: 800px){
   
     nav ul{
         display: none;
